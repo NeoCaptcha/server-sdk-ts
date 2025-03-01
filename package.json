@@ -1,0 +1,42 @@
+{
+  "name": "@neocaptcha/server-sdk",
+  "version": "1.0.0",
+  "description": "Server-side SDK for verifying NeoCaptcha tokens",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts",
+    "src/index.ts",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "captcha",
+    "verification",
+    "server",
+    "security",
+    "anti-bot"
+  ],
+  "author": "NeoCaptcha",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
